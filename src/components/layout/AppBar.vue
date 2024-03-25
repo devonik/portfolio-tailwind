@@ -4,15 +4,15 @@
         <!-- Our link container -->
         <div class="flex text-2xl space-x-2 mt-2 h-1/5 justify-center items-center">
             <RouterLink to="/about"
-                class="text-gray-500 dark:text-gray-300  hover:bg-indigo-500 hover:text-white p-2 rounded-sm"
-                :class="{ 'border-b-4 border-b-yellow-900': router.currentRoute.value.path === '/about' }" as="a">
+                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                :class="{ 'bg-indigo-500 text-white': router.currentRoute.value.path === '/about' }" as="a">
                 <div>
                     About
                 </div>
             </RouterLink>
             <RouterLink to="/projects"
-                class="text-gray-500 dark:text-gray-300  hover:bg-indigo-500 hover:text-white p-2 rounded-sm"
-                :class="{ 'border-b-4 border-b-yellow-900': router.currentRoute.value.path === '/projects' }" as="a">
+                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                :class="{ 'bg-indigo-500 text-white': router.currentRoute.value.path === '/projects' }" as="a">
                 <div>
                     Projects
                 </div>
