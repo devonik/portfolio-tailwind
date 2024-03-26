@@ -48,20 +48,20 @@
                         <p class="mt-3">
                             <a target="_blank" href="mailto:niklas.grieger@devnik.dev"
                                 class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
-                                    class="icon-[ic--outline-email]" style="width: 16px; height: 16px;"></span>
+                                    class="icon-[ic--outline-email] mr-1" style="width: 16px; height: 16px;"></span>
                                 Email</a>
                             <a target="_blank" href="https://www.linkedin.com/in/niklas-grieger-b98086152"
                                 class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
-                                    class="icon-[la--linkedin]" style="width: 16px; height: 16px;"></span>
+                                    class="icon-[la--linkedin] mr-1" style="width: 16px; height: 16px;"></span>
                                 LinkedIn</a>
 
                             <a target="_blank" href="https://www.xing.com/profile/Niklas_Grieger2/"
                                 class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
-                                    class="icon-[ion--logo-xing]" style="width: 16px; height: 16px;"></span>
+                                    class="icon-[ion--logo-xing] mr-1" style="width: 16px; height: 16px;"></span>
                                 LinkedIn</a>
                             <a target="_blank" href="https://github.com/devonik"
                                 class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
-                                    class="icon-[ri--github-fill]" style="width: 16px; height: 16px;"></span>
+                                    class="icon-[ri--github-fill] mr-1" style="width: 16px; height: 16px;"></span>
                                 GitHub</a>
 
                         </p>
