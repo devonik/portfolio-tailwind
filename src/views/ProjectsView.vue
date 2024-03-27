@@ -3,6 +3,7 @@ import { ref } from 'vue'
 
 let nuxt3IntercomTotalDownloads = ref()
 let nuxtI18nDataTotalDownloads = ref()
+let nuxtVuetifyNestedContainmentTotalDownloads = ref()
 function fetchNpmDownloads(packageName, period = 'last-month') {
   try {
     return fetch(`https://api.npmjs.org/downloads/point/${period}/${packageName}`);
@@ -17,6 +18,10 @@ fetchNpmDownloads('nuxt-3-intercom').then(async response => {
 fetchNpmDownloads('nuxt-i18n-data').then(async response => {
   const data = await response.json()
   nuxtI18nDataTotalDownloads.value = data.downloads
+})
+fetchNpmDownloads('nuxt-vuetify-nested-containment').then(async response => {
+  const data = await response.json()
+  nuxtVuetifyNestedContainmentTotalDownloads.value = data.downloads
 })
 </script>
 
@@ -88,6 +93,42 @@ fetchNpmDownloads('nuxt-i18n-data').then(async response => {
           <p>
             <span class="font-size: small text-gray-500 dark:text-gray-300">Npm downloads per month: <strong>{{
                 nuxtI18nDataTotalDownloads
+              }}</strong></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="md:flex">
+        <div class="md:flex-shrink-0">
+          <img class="w-full object-cover rounded-xl md:w-48"
+            src="@/assets/projects/nuxt-vuetify-nested-containment.gif" alt="Demo">
+        </div>
+        <div class="p-8">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nuxt3 module:
+            nuxt-vuetify-nested-containment</div>
+          <p class="block mt-1 text-lg font-medium text-black dark:text-white">
+            A module for nuxt3 that extend vuetify components</p>
+          <p class="mt-3 text-gray-500 dark:text-gray-300">This nuxt 3 module provides a client side plugin that add
+            This module provides multiple vuetify extended components like a List with nested logic
+            <br><br>
+            As always this module uses 100% Typescript
+          </p>
+          <p class="mt-3">
+            <a target="_blank" href="https://www.npmjs.com/package/nuxt-vuetify-nested-containment"
+              class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
+                class="icon-[file-icons--npm] mr-1" style="width: 16px; height: 16px;"></span>
+              Npm</a>
+
+            <a target="_blank" href="https://github.com/devonik/nuxt-vuetify-nested-containment"
+              class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
+                class="icon-[ri--github-fill] mr-1" style="width: 16px; height: 16px;"></span>
+              GitHub</a>
+
+          </p>
+          <p>
+            <span class="font-size: small text-gray-500 dark:text-gray-300">Npm downloads per month: <strong>{{
+                nuxtVuetifyNestedContainmentTotalDownloads
                 }}</strong></span>
           </p>
         </div>
