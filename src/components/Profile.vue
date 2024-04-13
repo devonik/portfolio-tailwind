@@ -13,8 +13,8 @@
                             Something
                             about me</p>
                         <p class="mt-2 text-gray-500 dark:text-gray-300">
-                            Heyo, I am Niklas from Germany and I love my work.
-                            <br>
+                            Hello, I am Niklas from Germany and I'm a passionate software engineer.
+                            <br><br>
                             I finished my education in the start of 2018 and I am always highly interested in new
                             technologies.
                             <br><br>
