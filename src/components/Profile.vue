@@ -58,7 +58,7 @@
                             <a target="_blank" href="https://www.xing.com/profile/Niklas_Grieger2/"
                                 class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center m-2 ms-0 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
                                     class="icon-[ion--logo-xing] mr-1" style="width: 16px; height: 16px;"></span>
-                                LinkedIn</a>
+                                Xing</a>
                             <a target="_blank" href="https://github.com/devonik"
                                 class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center m-2 ms-0 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
                                     class="icon-[ri--github-fill] mr-1" style="width: 16px; height: 16px;"></span>
