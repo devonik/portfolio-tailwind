@@ -15,18 +15,49 @@ const choosed = ref()
         </div>
         <div v-else class="flex justify-around flex-col md:flex-row">
             <div @click="() => { choosed = '3 days dive' }"
-                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white p-3 rounded-xl shadow-md m-3">
-                <p class="text-lg">Option A: 3 days á 2 max. dives at Orca dive center bali</p>
-                <p class="text-sm">
-                    Example: 25th Saturday 2 dive, 26th Sunday 2 dives, 27th 1 dive or 2 if possible
-                </p>
+                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white hover:cursor-pointer p-3 rounded-xl shadow-md m-3">
+                <div class="flex">
+                    <div class="content-center mr-3">
+                        <span class="icon-[map--scuba-diving]" style="width: 64px; height: 64px;"></span>
+                    </div>
+                    <div>
+                        <p class="text-lg">Option A: 3 days á 2 max. dives at Orca dive center bali</p>
+                        <p class="text-sm">
+                            Example: 25th Saturday 2 dive, 26th Sunday 2 dives, 27th 1 dive or 2 if possible
+                        </p>
+                    </div>
+                </div>
+
             </div>
             <div @click="() => { choosed = 'Advanced open water course' }"
-                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white p-3 rounded-xl shadow-md m-3">
-                <p class="text-lg">Option B: Advanced open water cource at Orca dive center bali</p>
-                <p class="text-sm">
-                    Have to ask how this can be scheduled
-                </p>
+                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white hover:cursor-pointer p-3 rounded-xl shadow-md m-3">
+                <div class="flex">
+                    <div class="content-center mr-3">
+                        <span class="icon-[map--scuba-diving]" style="width: 64px; height: 64px;"></span>
+                    </div>
+                    <div>
+                        <p class="text-lg">Option B: Advanced open water cource at Orca dive center bali</p>
+                        <p class="text-sm">
+                            Have to ask how this can be scheduled
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div @click="() => { choosed = 'You can choose' }"
+                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white hover:cursor-pointer p-3 rounded-xl shadow-md m-3">
+                <div class="flex">
+                    <div class="content-center mr-3">
+                        <span class="icon-[material-symbols--hiking-sharp]" style="width: 64px; height: 64px;"></span>
+                    </div>
+                    <div>
+                        <p class="text-lg">Option C: You can choose</p>
+                        <p class="text-sm">
+                            Example: Diving in Gili Air, hiking to the vulcano, trip to komodo
+                            or any other activity
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
