@@ -83,6 +83,10 @@
                     <div class="mb-3">
                         <p class="block mb-3 text-lg font-medium text-black dark:text-white">
                             Can work with</p>
+                        <span class="icon-[devicon--react] mr-3" title="React"
+                            style="width: 32px; height: 32px;"></span>
+                        <span class="icon-[tabler--brand-react-native] mr-3" title="React native"
+                            style="width: 32px; height: 32px;"></span>
                         <span class="icon-[logos--postgresql] mr-3" title="PostgreSQL"
                             style="width: 32px; height: 32px;"></span>
                         <span class="icon-[bxl--spring-boot] mr-3" title="Java Springboot"

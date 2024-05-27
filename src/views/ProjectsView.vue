@@ -31,6 +31,30 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment').then(async response => {
       <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
           <div class="md:flex-shrink-0 p-8 pr-0">
+            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/pongmaster-logo.png"
+              alt="Pongmaster">
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">React native developer
+              @Pongmaster</div>
+            <p class="block mt-1 text-lg font-medium text-black dark:text-white">
+              I supported this company by maintaining their React native App</p>
+            <p class="mt-3 text-gray-500 dark:text-gray-300">
+              I added some features like:
+            <ul class="list-disc">
+              <li>A filter function within a Google Maps integration. The user can either search for a location name or
+                filter</li>
+              <li>Some design improvements from Figma for existing screens</li>
+              <li>Implement a user review function so users can review public tabletennis tables</li>
+              <li>Some other adjustments</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+          <div class="md:flex-shrink-0 p-8 pr-0">
             <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/heiland-logo.png" alt="Heiland">
           </div>
           <div class="p-8">
