@@ -13,34 +13,37 @@
                             Something
                             about me</p>
                         <p class="mt-2 text-gray-500 dark:text-gray-300">
-                            Hello, I am Niklas from Germany and I'm a passionate software engineer.
+                            Hello, I am Niklas from Germany and I'm a passionate full stack software engineer.
                             <br><br>
                             I finished my education in the start of 2018 and I am always highly interested in new
-                            technologies.
-                            <br><br>
+                            technologies.<br>
+                            My favorite technologies are VueJs, Nuxt, Vuetify for the Frontend, NodeJs or Java Spring
+                            Boot in the Backend, PostgreSQL or NoSQL as database and AWS as a Cloud provider. For App
+                            development I am interested in React Native and Flutter projects.<br>
+                            <br>
                             In every project I've been in, I worked as a full-stack developer, and I love being able to
-                            do everything myself in a project. However, my favorite area to specialize in is frontend.
-                            <br><br>
-                            I tried the famous frameworks React, Angular, and VueJs, and I am a huge fan of the VueJs
-                            framework. I really like that the VueJs framework is built and maintained by the open-source
-                            community, which contributes to a lovely ecosystem.
+                            do everything myself in a project. However, my favorite area to specialize in is
+                            frontend.
                         </p>
+                        <p class="block mt-2 text-lg font-medium text-black dark:text-white">I can help you:</p>
+                        <ul class="mt-2 text-gray-500 dark:text-gray-300 list-disc">
+                            <li>Evaluate what technology fits the best for your Project</li>
+                            <li>Maintain or create your next VueJs Project (5 years+ experience)</li>
+                            <li>Migrate your Version 2 VueJs (also Vuex, Nuxt, Vuetify if used) to the latest Version 3
+                            </li>
+                            <li>Work with NodeJs or Java Spring Boot as a REST API</li>
+                            <li>Work with AWS Services like AWS Lambda, AWS API Gateway, AWS Beanstalk and more</li>
+                            <li>Helping you with your CI/CD workflow</li>
+                            <li>Detecting actual problems and finding efficient solutions in your workflow or code</li>
+                            problems
+                            <li>Overtake the CSS hassle ;)</li>
+                            <li>Open mindset for new technologies</li>
+                        </ul>
+
                     </div>
                     <div class="mb-3">
-                        <p class="block mt-1 text-lg font-medium text-black dark:text-white">
-                            What I can can do for you</p>
-                        <p class="mt-2 text-gray-500 dark:text-gray-300">
-                            I am always interested in new projects. I have experience in greenfield projects and did
-                            many migrations like
-                        <ul class="mt-2 text-gray-500 dark:text-gray-300">
-                            <li>Vue 2 -> Vue 3</li>
-                            <li>Nuxt2 -> Nuxt3</li>
-                            <li>Vuetify2 -> Vuetify 3</li>
-                            <li>Vuex
-                                ->
-                                Pinia</li>
-                        </ul>
-                        <p class="mt-2 text-gray-500 dark:text-gray-300">So when you have a frontend project or any
+                        <p class="block mt-1 text-lg font-medium text-black dark:text-white">So when you have a frontend
+                            project or any
                             other full stack question feel free to contact me
                             via
                             one of the channels
@@ -66,7 +69,6 @@
 
                         </p>
 
-                        </p>
                     </div>
                     <hr class="mt-6 mb-6">
                     <div class="mb-3">
