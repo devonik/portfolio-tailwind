@@ -1,5 +1,16 @@
 <script setup>
 import { ref } from 'vue'
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Project history',
+  meta: [
+    {
+      name: 'description',
+      content: "Here you can find my last projects",
+    },
+  ],
+})
 
 let nuxt3IntercomTotalDownloads = ref()
 let nuxtI18nDataTotalDownloads = ref()

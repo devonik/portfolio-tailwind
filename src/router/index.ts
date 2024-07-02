@@ -25,8 +25,14 @@ const router = createRouter({
     {
       path: '/playground',
       name: 'playground',
-      component: () => import('../views/Playground.vue'),
-      meta: { layout: 'playground' }
+      component: () => import('../views/PlaygroundView.vue'),
+      meta: { layout: 'plain' }
+    },
+    {
+      path: '/tabletennis',
+      name: 'tabletennis',
+      component: () => import('../views/TabletennisView.vue'),
+      meta: { layout: 'plain' }
     }
   ]
 })

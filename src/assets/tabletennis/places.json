@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Indoor center",
+        "continent": "Asia",
+        "country": "Thailand",
+        "place": "Ko samui",
+        "imageSrc": "src/assets/app-bar-header-voucher.jpg"
+    },
+    {
+        "title": "Indoor center near the train",
+        "continent": "Asia",
+        "country": "Vietnam",
+        "place": "Ho chi minh city",
+        "imageSrc": "src/assets/profile.avif"
+    },
+    {
+        "title": "Indoor center tricky to find",
+        "continent": "Asia",
+        "country": "Vietnam",
+        "place": "Nha thrang",
+        "imageSrc": "src/assets/profile.avif"
+    }
+]
