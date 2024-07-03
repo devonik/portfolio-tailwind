@@ -3,15 +3,17 @@ import { ref } from 'vue'
 import places from '@/assets/tabletennis/places.json'
 import { groupBy } from "@/utils/helper";
 
-const initialFilter = {
+const filter = ref({
     country: undefined,
     continent: undefined
-}
-const filter = ref(initialFilter)
+})
 const emit = defineEmits(['filter'])
 
 function resetFilter() {
-    filter.value = initialFilter
+    filter.value = {
+        country: undefined,
+        continent: undefined
+    }
     emit('filter', filter.value)
 }
 </script>
