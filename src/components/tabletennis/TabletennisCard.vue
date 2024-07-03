@@ -1,5 +1,7 @@
 <script setup lang="ts">
-defineProps({
+import { computed } from 'vue';
+
+const props = defineProps({
     title: {
         type: String,
         required: true
