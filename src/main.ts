@@ -14,5 +14,4 @@ app.use(head)
 app.use(createPinia())
 app.use(router)
 
-await router.isReady()
 app.mount('#app')
