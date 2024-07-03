@@ -15,22 +15,22 @@ useHead({
 let nuxt3IntercomTotalDownloads = ref()
 let nuxtI18nDataTotalDownloads = ref()
 let nuxtVuetifyNestedContainmentTotalDownloads = ref()
-function fetchNpmDownloads(packageName, period = 'last-month') {
+function fetchNpmDownloads(packageName: string, period = 'last-month') {
   try {
     return fetch(`https://api.npmjs.org/downloads/point/${period}/${packageName}`);
   } catch (error) {
     console.error("Could not fetchNpmDownloads for package: " + packageName, error);
   }
 }
-fetchNpmDownloads('nuxt-3-intercom').then(async response => {
+fetchNpmDownloads('nuxt-3-intercom')?.then(async response => {
   const data = await response.json()
   nuxt3IntercomTotalDownloads.value = data.downloads
 })
-fetchNpmDownloads('nuxt-i18n-data').then(async response => {
+fetchNpmDownloads('nuxt-i18n-data')?.then(async response => {
   const data = await response.json()
   nuxtI18nDataTotalDownloads.value = data.downloads
 })
-fetchNpmDownloads('nuxt-vuetify-nested-containment').then(async response => {
+fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
   const data = await response.json()
   nuxtVuetifyNestedContainmentTotalDownloads.value = data.downloads
 })

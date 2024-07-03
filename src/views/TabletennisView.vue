@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import type { Ref } from 'vue'
 import TabletennisHeader from '@/components/tabletennis/TabletennisHeader.vue'
 import TabletennisCard from '@/components/tabletennis/TabletennisCard.vue'
 import TabletennisPlaces from '@/assets/tabletennis/places.json'
@@ -15,12 +16,14 @@ useHead({
     ],
 })
 
-const places = ref(TabletennisPlaces)
-function filter(filter) {
+const places: Ref<{
+    [key: string]: any
+}> = ref(TabletennisPlaces)
+function filter(filter: any) {
     places.value = TabletennisPlaces
     Object.keys(filter).forEach(filterKey => {
         if (typeof filter[filterKey] === 'undefined') return
-        places.value = places.value.filter(place => place[filterKey] === filter[filterKey])
+        places.value = places.value.filter((place: any) => place[filterKey] === filter[filterKey])
     });
 }
 </script>
