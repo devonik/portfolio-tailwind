@@ -39,10 +39,10 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
 <template>
   <main>
     <div class="mb-6">
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/pongmaster-logo.png"
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/pongmaster-logo.png"
               alt="Pongmaster">
           </div>
           <div class="p-8">
@@ -52,7 +52,7 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
               I supported this company by maintaining their React native App</p>
             <p class="mt-3 text-gray-500 dark:text-gray-300">
               I added some features like:
-            <ul class="list-disc">
+            <ul class="list-disc text-gray-500 dark:text-gray-400">
               <li>A filter function within a Google Maps integration. The user can either search for a location name or
                 filter</li>
               <li>Some design improvements from Figma for existing screens</li>
@@ -63,10 +63,11 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
           </div>
         </div>
       </div>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/heiland-logo.png" alt="Heiland">
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/heiland-logo.png"
+              alt="Heiland">
           </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Full stack developer @Heiland
@@ -75,7 +76,7 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
               I worked here 4 years as a senior full stack developer</p>
             <p class="mt-3 text-gray-500 dark:text-gray-300">
               What else I did
-            <ul class="list-disc">
+            <ul class="list-disc text-gray-500 dark:text-gray-400">
               <li>Lead frontend developer</li>
               <li>Develop new features and new projects in its full stack - VueJs,
                 NodeJs, SpringBoot, PostgresSQl, AWS cloud</li>
@@ -88,10 +89,10 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
           </div>
         </div>
       </div>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/upljft-logo.png" alt="Upljft">
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/upljft-logo.png" alt="Upljft">
           </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Full stack developer @upljft GmbH
@@ -100,7 +101,7 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
               I worked here for 6 Month as a senior full stack developer</p>
             <p class="mt-3 text-gray-500 dark:text-gray-300">
               What else I did
-            <ul class="list-disc">
+            <ul class="list-disc text-gray-500 dark:text-gray-400">
               <li>Lead full stack developer</li>
               <li>Develop a Rest API, written in Laravel, to generate Yogagraphy
                 images by a custom string and send a christmas email to
@@ -114,10 +115,10 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
           </div>
         </div>
       </div>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/osp-logo.png" alt="OSP">
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/osp-logo.png" alt="OSP">
           </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Otto group solution provider GmbH
@@ -126,7 +127,7 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
               I worked here for 1,5 years as a senior full stack developer</p>
             <p class="mt-3 text-gray-500 dark:text-gray-300">
               What else I did
-            <ul class="list-disc">
+            <ul class="list-disc text-gray-500 dark:text-gray-400">
               <li>Further development of an Android (Java) and an IOS (SWIFT) app</li>
               <li>Develop a Rest API for generating templates by dynamic input and
                 sending continuous mass mailings of SMS and emails for a parcel
@@ -138,10 +139,11 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
           </div>
         </div>
       </div>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/berenberg-logo.jpeg" alt="OSP">
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/berenberg-logo.jpeg"
+              alt="OSP">
           </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Education @Berenberg
@@ -154,10 +156,10 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
     </div>
     <div>
       <p class="text-pink-500 text-center text-xl mb-3">Open source projects</p>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/nuxt-3-intercom.gif"
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-3-intercom.gif"
               alt="Nuxt 3 intercom">
           </div>
           <div class="p-8">
@@ -191,10 +193,10 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
           </div>
         </div>
       </div>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48" src="@/assets/projects/nuxt-18n-data.gif"
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-18n-data.gif"
               alt="Nuxt i18n data">
           </div>
           <div class="p-8">
@@ -229,10 +231,10 @@ fetchNpmDownloads('nuxt-vuetify-nested-containment')?.then(async response => {
           </div>
         </div>
       </div>
-      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
-          <div class="md:flex-shrink-0 p-8 pr-0">
-            <img class="w-full object-cover rounded-xl md:w-48"
+          <div class="md:flex-shrink-0 md:p-8 md:pr-0">
+            <img class="w-full object-cover md:rounded-xl md:w-48"
               src="@/assets/projects/nuxt-vuetify-nested-containment.gif" alt="Nuxt vuetify nested containment">
           </div>
           <div class="p-8">

@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="md:flex">
                 <div class="md:flex-shrink-0">
-                    <img class="h-48 w-full object-cover rounded-xl md:w-48" src="@/assets/profile.avif"
+                    <img class="h-48 w-full object-cover md:rounded-xl md:w-48" src="@/assets/profile.avif"
                         alt="It's just me">
                 </div>
                 <div class="p-8">

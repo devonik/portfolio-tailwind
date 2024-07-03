@@ -24,6 +24,6 @@ useHead({
     <AppBar class="mb-6"></AppBar>
   </template>
 
-  <router-view />
+  <router-view class="dark" />
   <SpeedInsights />
 </template>
