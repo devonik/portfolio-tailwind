@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { RouterLink, useRouter } from 'vue-router';
+
+const enabled = ref(false)
+const router = useRouter()
+</script>
 <template>
     <div class="h-56">
         <div class="app-bar__image h-4/5"></div>
@@ -20,14 +27,6 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-import { RouterLink, useRouter } from 'vue-router';
-
-const enabled = ref(false)
-const router = useRouter()
-</script>
 <style lang="scss">
 .app-bar__image {
     background-image: linear-gradient(to right top, rgb(1, 87, 155), rgba(25, 32, 72, 0.7)), url(./../../assets/app-bar-image.avif);

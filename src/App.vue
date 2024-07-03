@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import AppBar from './components/layout/AppBar.vue'
 import { SpeedInsights } from "@vercel/speed-insights/vue"
 

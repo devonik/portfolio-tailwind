@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Profile from '../components/Profile.vue'
 import { useHead } from '@unhead/vue'
 

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import TabletennisHeader from '@/components/tabletennis/TabletennisHeader.vue'
 import TabletennisCard from '@/components/tabletennis/TabletennisCard.vue'

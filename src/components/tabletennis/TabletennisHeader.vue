@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import places from '@/assets/tabletennis/places.json'
 import { groupBy } from "@/utils/helper";
