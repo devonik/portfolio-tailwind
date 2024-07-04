@@ -1,10 +1,47 @@
+<script setup>
+import { ref } from 'vue'
+
+const stackoverflowUserData = ref()
+function fetchStackoverflowUserData() {
+    try {
+        return fetch(`https://api.stackexchange.com/2.3/users/${import.meta.env.VITE_STACKOVERFLOW_USER_ID}?order=desc&sort=reputation&site=stackoverflow`).then(response => {
+            response.json().then(data => {
+                stackoverflowUserData.value = data.items[0]
+            })
+        });
+    } catch (error) {
+        console.error("Could not fetchStackoverflowUserData for user: " + import.meta.env.VITE_STACKOVERFLOW_USER_ID, error);
+    }
+}
+fetchStackoverflowUserData()
+
+</script>
 <template>
     <div>
         <div class="max-w-md mx-auto bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="md:flex">
-                <div class="md:flex-shrink-0">
+                <div class="md:flex-shrink-0 my-6 mx-3">
                     <img class="h-48 w-full object-cover md:rounded-xl md:w-48" src="@/assets/profile.avif"
                         alt="It's just me">
+                    <div v-if="stackoverflowUserData" class="mt-12">
+                        <img height="265" width="265" src="/stackoverflow.png" alt="Stackoverflow profile">
+                        <div class="flex flex-col items-center justify-center">
+                            <img :src="stackoverflowUserData.profile_image"
+                                class="h-48 w-full object-cover md:rounded-xl md:w-48" />
+                            <p class="text-gray-500">Reputation: <span class="font-medium">{{
+                        stackoverflowUserData.reputation }}</span></p>
+                            <p class="text-gray-500">Badges</p>
+                            <div class="stackoverflow-badge-wrapper stackoverflow-badge-wrapper--gold">
+                                {{ stackoverflowUserData.badge_counts.gold }}
+                            </div>
+                            <div class="stackoverflow-badge-wrapper stackoverflow-badge-wrapper--silver">
+                                {{ stackoverflowUserData.badge_counts.silver }}
+                            </div>
+                            <div class="stackoverflow-badge-wrapper stackoverflow-badge-wrapper--bronze">
+                                {{ stackoverflowUserData.badge_counts.bronze }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="p-8">
                     <div class="mb-3">
@@ -106,3 +143,28 @@
         </div>
     </div>
 </template>
+<style lang="scss">
+.stackoverflow-badge-wrapper {
+    width: 174px;
+    text-align: center;
+    margin-top: 6px;
+
+    &--gold {
+        border: 1px solid hsl(45, 100%, 42%);
+        border-radius: 4px;
+        background-color: hsl(46, 100%, 91%);
+    }
+
+    &--silver {
+        border: 1px solid hsl(210, 5%, 68%);
+        border-radius: 4px;
+        background-color: hsl(0, 0%, 95%);
+    }
+
+    &--bronze {
+        border: 1px solid hsl(28, 43%, 65%);
+        border-radius: 4px;
+        background-color: hsl(28, 40%, 92%);
+    }
+}
+</style>
