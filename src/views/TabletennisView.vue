@@ -31,8 +31,8 @@ function filter(filter: any) {
     <!-- Header -->
     <TabletennisHeader @filter="filter"></TabletennisHeader>
     <hr class="mx-6">
-    <div class="flex m-6">
-        <TabletennisCard v-for="(place, index) in places" :key="place.title" v-bind="place" :index="index" class="mr-3">
+    <div class="flex flex-wrap m-6">
+        <TabletennisCard v-for="place in places" :key="place.id" :place="place" class="mr-3">
         </TabletennisCard>
     </div>
 </template>

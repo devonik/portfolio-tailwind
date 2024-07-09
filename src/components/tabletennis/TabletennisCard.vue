@@ -1,41 +1,23 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import type { Place } from '@/types'
+import { useRouter } from 'vue-router'
+const props = defineProps<{
+    place: Place
+}>()
+const router = useRouter()
 
-const props = defineProps({
-    title: {
-        type: String,
-        required: true
-    },
-    continent: {
-        type: String,
-        required: true
-    },
-    country: {
-        type: String,
-        required: true
-    },
-    place: {
-        type: String,
-        required: true
-    },
-    imageSrc: {
-        type: String,
-        required: true
-    },
-    index: {
-        type: Number,
-        default: 0
-    }
-})
+function showDetail() {
+    router.push('/tabletennis/' + props.place.id)
+}
 </script>
 
 <template>
-    <div class="tabletennis__card">
-        <img class="tabletennis__card__image" width="250" height="250" :alt="title" :src="imageSrc" />
-        <div class="tabletennis__card__meta" :class="index % 2 ? 'text-red-500' : 'text-black'">
-            <p class="font-medium">{{ title }}</p>
-            <p class="opacity-50">{{ continent }}</p>
-            <p class="opacity-50">{{ country + ', ' + place }}</p>
+    <div class="tabletennis__card" @click="showDetail">
+        <img class="tabletennis__card__image" width="250" height="250" :alt="place.title" :src="place.imageSrc" />
+        <div class="tabletennis__card__meta">
+            <p class=" font-medium">{{ place.title }}</p>
+            <p class="opacity-50">{{ place.continent }}</p>
+            <p class="opacity-50">{{ place.country + ', ' + place.place }}</p>
         </div>
     </div>
 </template>
@@ -43,7 +25,6 @@ const props = defineProps({
 .tabletennis__card {
     position: relative;
     width: 250px;
-    height: 250px;
     border-radius: 6px;
     cursor: pointer;
 
@@ -55,10 +36,6 @@ const props = defineProps({
         border-radius: 6px;
     }
 
-    &__meta {
-        position: absolute;
-        bottom: 40px;
-        right: 25px;
-    }
+    &__meta {}
 }
 </style>

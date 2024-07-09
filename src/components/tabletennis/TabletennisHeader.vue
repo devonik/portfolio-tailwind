@@ -7,6 +7,12 @@ const filter = ref({
     country: undefined,
     continent: undefined
 })
+defineProps({
+    isFilterActive: {
+        type: Boolean,
+        default: true
+    }
+})
 const emit = defineEmits(['filter'])
 
 function resetFilter() {
@@ -24,7 +30,7 @@ function resetFilter() {
         <h1 class="text-4xl"><span class="text-red-600">Tabletennis</span> <span class="text-black">Worldwide</span>
         </h1>
         <p class="text-gray-500 mt-1 mb-6">Find places to play tabletennis around the world</p>
-        <div class="flex">
+        <div class="flex" v-if="isFilterActive">
             <div class="flex flex-col mr-3">
                 <label for="filter-continent">Filter by continent</label>
                 <select v-model="filter.continent" id="filter-continent" @change="$emit('filter', filter)">

@@ -1,23 +1,172 @@
 [
     {
+        "id": 1,
+        "title": "Indoor area in the Big C shopping mall",
+        "continent": "Asia",
+        "country": "Thailand",
+        "place": "Phuket",
+        "imageSrc": "/tabletennis/01-thailand-phuket.jpg",
+        "details": {
+            "locationText": "72 หมู่ 5 ต.วิชิต อ.เมือง, Ek Wanit Uthit Soi 2, Wichit, Mueang Phuket District, Phuket 83000, Thailand",
+            "locationHref": "https://maps.app.goo.gl/ToFH3EQ98QHwuBj96",
+            "time": "Group training, Tournament at weekends, or individual coaching",
+            "timeHint": "The best is to look in there schedule (see image below) and contact the owner via Instagram <Instagram hinterlegen>. If you just go maybe it already full so tell him first",
+            "isCoachPossible": true,
+            "level": "All levels, good place for intermediate and professionals. Specially in the Tournament 'Master Cup' are very good players",
+            "text": "This place is in a Big C Shopping Mall on the higest floor. I just went there at a Thursday but the tournament was already full. After that I listed me for the 'Master Cup' tournament at Sunday. It was very fun but also very hard. Some players there are professional and really good. I went out in the group phase. Definitly recommended for players that looking for a challenge"
+        }
+    },
+    {
+        "id": 2,
         "title": "Indoor center",
         "continent": "Asia",
         "country": "Thailand",
         "place": "Ko samui",
-        "imageSrc": "/tabletennis/app-bar-header-voucher.jpg"
+        "imageSrc": "/tabletennis/02-thailand-ko-samui.jpg",
+        "details": {
+            "locationText": "84320, Bo Put, Surat Thani 84320, Thailand",
+            "locationHref": "https://maps.app.goo.gl/8d8KFGhyhNmh5zY49",
+            "time": "individual or group training around 10:00 - 13:00",
+            "timeHint": "You can rent the place individual with friends or there is a group that meet around 10:00 - 13:00. For the group training the best is to ask in there Telegram<!!!Telegram link!!!> group",
+            "isCoachPossible": false,
+            "level": "All levels",
+            "text": "The place is a Sportscenter and contains a gym, a area for badminton and a area for 4 tabletennis tables. The location is easy to find. I made the mistake to just go there and I could'nt find anyone. I highly recommend to join the community telegram chat and ask for a time to play. In the group were around 8 people, we warmed up a while and then we played matches against each other. Was very funny :)"
+        }
     },
     {
+        "id": 3,
+        "title": "Indoor room",
+        "continent": "Asia",
+        "country": "Thailand",
+        "place": "Ko phangan",
+        "imageSrc": "/tabletennis/thailand-ko-phangan.jpg",
+        "details": {
+            "locationText": "PXMJ+8W9, Ko Pha-ngan, Ko Pha-ngan District, Surat Thani 84280, Thailand",
+            "locationHref": "https://maps.app.goo.gl/g3RZX1Zrs1bLDKoF7",
+            "time": "Individual or a planned tournament",
+            "timeHint": "I could'nt go because I had an accident days before. But I contacted them via Telegram <!!!Telegram link!!!> and after chatting with the owner they wanted to do a tournament. There is no official schedule so you should contact them via Telegram<!!!Telegram link!!!>",
+            "isCoachPossible": false,
+            "level": "All levels",
+            "text": "The place is a Sportscenter and contains a gym, a area for badminton and a area for 4 tabletennis tables. The location is easy to find. I made the mistake to just go there and I could'nt find anyone. I highly recommend to join the community telegram chat and ask for a time to play. In the group were around 8 people, we warmed up a while and then we played matches against each other. Was very funny :)"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Indoor center in a shopping mall",
+        "continent": "Asia",
+        "country": "Phillipines",
+        "place": "Manila",
+        "imageSrc": "/tabletennis/03-philipines-manila.jpg",
+        "details": {
+            "locationText": "30 Meralco Ave, Pasig, Metro Manila, Philippines",
+            "locationHref": "https://maps.app.goo.gl/vChuKgp3FPsMD37b9",
+            "time": "Individual coaching, go with a friend or just go there any day around 18:00 / 19:00",
+            "timeHint": "There is no official schedule. You have to just go there or go with a friend. If you just and hope there is someone. I recommend to contact the owner via Facebook<!!!Facebook link!!!>",
+            "isCoachPossible": true,
+            "level": "All levels",
+            "text": "The place is in a shopping mall (like all activites in Manila :D) in the first floor. <!!!What is the name he said me??!!!>. I just went there in a weekday around 12:00 but sadly there was only the coach coaching a kid. After waiting a bit there was a local, we played some hours and he is now a really good friend of mine :). Definitly recommended to go here for some relaxed playtime. No tournament here, you organize things yourself"
+        }
+    },
+    {
+        "id": 5,
         "title": "Indoor center near the train",
         "continent": "Asia",
         "country": "Vietnam",
         "place": "Ho chi minh city",
-        "imageSrc": "/tabletennis/profile.avif"
+        "imageSrc": "/tabletennis/04-vietnam-saigon.jpg",
+        "details": {
+            "locationText": "01 Đ. Nguyễn Thông, phường 9, Quận 3, Hồ Chí Minh, Vietnam",
+            "locationHref": "https://maps.app.goo.gl/MMiaSAaEfsDQy6GP7",
+            "time": "Very local place. I don't really know. I just went there at afternoon and could play with them. Really strong players",
+            "timeHint": "There is no official schedule. You have to just go there or go with a friend",
+            "isCoachPossible": false,
+            "level": "Intermediate, Professionals",
+            "text": "I went here spontanically I was in the near and had luck that here were some locals. One of them was really friendly and played with me. After some warmup we play single and double. I must say they all were super good I had no chance at all"
+        }
     },
     {
+        "id": 6,
         "title": "Indoor center tricky to find",
         "continent": "Asia",
         "country": "Vietnam",
         "place": "Nha thrang",
-        "imageSrc": "/tabletennis/profile.avif"
+        "imageSrc": "/tabletennis/05-vietnam-nha-thrang.jpg",
+        "details": {
+            "locationText": "75/1 Nguyễn thi minh khai ( khu sân tennit, 20 8 Không Quân, Phước Hoà, Nha Trang, Khánh Hòa, Vietnam",
+            "locationHref": "https://maps.app.goo.gl/W2CHD48NHX1jMQxT6",
+            "time": "I just went here on a weekday at 18:00. That was a good time. At this time you can find some locals and play with them",
+            "timeHint": "There is no official schedule. You have to just go there or go with a friend",
+            "isCoachPossible": false,
+            "level": "All levels",
+            "text": "Caution: when you make a route from the beach side (south east of nha thrang) google maps will route you through an military area you cannot pass. That was a strange experience :D So just take the Main road and at one point you turn left. Its a bit tricky to find but you will see 2 big tennis courts and when you go through the middle you will find the entry to the tabletennis area. <!!!Make a picture of the route!!!>"
+        }
+    },
+    {
+        "id": 7,
+        "title": "Indoor center",
+        "continent": "Asia",
+        "country": "Vietnam",
+        "place": "Da nang",
+        "imageSrc": "/tabletennis/06-vietnam-da-nang.jpg",
+        "details": {
+            "locationText": "90 Lê Đình Dương, Phước Ninh, Hải Châu, Đà Nẵng 550000, Vietnam",
+            "locationHref": "https://maps.app.goo.gl/xam2FYi5UGgiM76q6",
+            "time": "The best time here to find other players is 18:00 or you book a coach",
+            "timeHint": "",
+            "isCoachPossible": true,
+            "level": "All levels",
+            "text": "I went here one day to ask what time is the best and the next day I went at 18:00. In the ground floor are some kids playing with coaches. On the first floor you can find other adult players you just can play with. There was no player free so the coach played with me"
+        }
+    },
+    {
+        "id": 8,
+        "title": "Indoor center tricky to find",
+        "continent": "Asia",
+        "country": "Vietnam",
+        "place": "Hoi an",
+        "imageSrc": "/tabletennis/07-vietnam-hoi-an.jpg",
+        "details": {
+            "locationText": "V8FG+F8V, Phường Minh An, Hội An, Quảng Nam, Vietnam",
+            "locationHref": "https://maps.app.goo.gl/o7BfdyKuikSoJrVDA",
+            "time": "The best time here to find other players is 18:00",
+            "timeHint": "",
+            "isCoachPossible": true,
+            "level": "All levels",
+            "text": "That was super fun. Super friendly locals. At both days I went here the coach was playing with me some practices. After that I played some matches with other players. I definitly recommend this place. This place is a bit tricky to find. Have a look at the image with the route <!!!Image with route!!!>"
+        }
+    },
+    {
+        "id": 9,
+        "title": "Indoor center tricky to find",
+        "continent": "Asia",
+        "country": "Indonesia",
+        "place": "Sorong",
+        "imageSrc": "/tabletennis/08-indonesien-sorong.jpg",
+        "details": {
+            "locationText": "482H+GWG, Jl. A.M. Sangaji Gonof, Klasaman, Distrik Sorong Timur, Kota Sorong, Papua Bar. 98416, Indonesia",
+            "locationHref": "https://maps.app.goo.gl/isj9NsHsMYASADTt5",
+            "time": "The best time here to find other players is 18:00",
+            "timeHint": "Be ready to play with some kids :)",
+            "isCoachPossible": false,
+            "level": "All levels",
+            "text": "That was super fun. Who thought I will find a place to play in Sorong :O As first I wanted to check out the place to hear what time is the best but I couldnt find the location. The google maps marker is 100 - 200m wrong :( look in the image for the correct route<!!!-IMAGE ROUTE--!!!> Finally I found the place and the guy said 18:00. So I went in the same day and I got surprised by alot of kids starring at me haha. I felt like a superstar. The people were sooo friendly they instantly wanted to play with me. At the end we made alot of pictures together :D"
+        }
+    },
+    {
+        "id": 10,
+        "title": "Indoor center tricky to find",
+        "continent": "Asia",
+        "country": "Indonesia",
+        "place": "Bali",
+        "imageSrc": "/tabletennis/09-indonesien-bali.jpg",
+        "details": {
+            "locationText": "Buduk, Mengwi, Badung Regency, Bali 80351, Indonesia",
+            "locationHref": "https://maps.app.goo.gl/qL9hwSrGyT2ThmE36",
+            "time": "Only coach or you bring a friend",
+            "timeHint": "If you take a coach you should contact him via whats app<!!!--ADD WHATS APP-!!>>>",
+            "isCoachPossible": false,
+            "level": "All levels",
+            "text": "I just went here but had no luck to find players. The coach said me the best is to contact him via whats app and make some training. Not possible to find here other players to play with. The coach is really friendly and experienced. I can definitly recomment the coaching"
+        }
     }
 ]

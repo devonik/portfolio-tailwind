@@ -33,6 +33,12 @@ const router = createRouter({
       name: 'tabletennis',
       component: () => import('../views/TabletennisView.vue'),
       meta: { layout: 'plain' }
+    },
+    {
+      path: '/tabletennis/:placeId',
+      name: 'tabletennis-place-detail',
+      component: () => import('../views/TabletennisDetailView.vue'),
+      meta: { layout: 'plain' }
     }
   ]
 })
