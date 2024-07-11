@@ -13,7 +13,7 @@ function showDetail() {
 
 <template>
     <div class="tabletennis__card" @click="showDetail">
-        <img class="tabletennis__card__image" width="250" height="250" :alt="place.title" :src="place.imageSrc" />
+        <img class="tabletennis__card__image" style="height: 350px;" :alt="place.title" :src="place.imageSrc" />
         <div class="tabletennis__card__meta">
             <p class=" font-medium">{{ place.title }}</p>
             <p class="opacity-50">{{ place.continent }}</p>
@@ -24,8 +24,9 @@ function showDetail() {
 <style lang="scss">
 .tabletennis__card {
     position: relative;
-    width: 250px;
+    width: 350px;
     border-radius: 6px;
+
     cursor: pointer;
 
     &:hover {

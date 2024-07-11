@@ -41,22 +41,24 @@ function navigatePlaceForward() {
     <!-- Header -->
     <TabletennisHeader :is-filter-active="false"></TabletennisHeader>
     <hr class="mx-6">
-    <div class="flex justify-between">
-        <button @click="navigatePlaceBack">ZURÜCK</button>
-        <button @click="navigatePlaceForward">VOR</button>
-    </div>
     <div class="m-6" v-if="place">
+        <div class="flex justify-between">
+            <button @click="navigatePlaceBack">ZURÜCK</button>
+            <button @click="navigatePlaceForward">VOR</button>
+        </div>
+        <div class="flex">
+            <Transition>
+                <TabletennisCard :key="place.id" :place="place" class="mx-auto">
+                </TabletennisCard>
+            </Transition>
 
-        <Transition>
-            <TabletennisCard :key="place.id" :place="place" class="mx-auto">
-            </TabletennisCard>
-        </Transition>
+        </div>
         <!--Location-->
         <div class="flex my-3">
             <span class="mr-1 w-3/12">Icon</span>
             <div class="w-9/12">
 
-                <a :href="place.details?.locationHref" class="mr-1 hover:underline" target="_blank">{{
+                <a :href="place.details?.locationHref" class="mr-1 hover:underline text-blue-600" target="_blank">{{
         place.details?.locationText }}</a>
                 <span>Icon new tab</span>
             </div>
@@ -103,11 +105,11 @@ function navigatePlaceForward() {
 
 .v-enter-from,
 .v-leave-to {
-    opacity: 0;
+    opacity: 0.5;
 }
 
 .v-enter-from .modal-wrapper-inner,
 .v-leave-to .modal-wrapper-inner {
-    transform: translateX(-50px);
+    transform: translateY(-500px);
 }
 </style>
