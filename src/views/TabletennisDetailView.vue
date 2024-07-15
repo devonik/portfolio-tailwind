@@ -47,7 +47,7 @@ function navigatePlaceForward() {
             <button @click="navigatePlaceForward">VOR</button>
         </div>
         <div class="flex">
-            <Transition>
+            <Transition name="fade" mode="out-in">
                 <TabletennisCard :key="place.id" :place="place" class="mx-auto">
                 </TabletennisCard>
             </Transition>
@@ -96,20 +96,13 @@ function navigatePlaceForward() {
 
 </template>
 <style scoped>
-.v-enter-active,
-.v-leave-active,
-.v-enter-active .modal-wrapper-inner,
-.v-leave-active .modal-wrapper-inner {
-    transition: all 0.5s ease;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
 }
 
-.v-enter-from,
-.v-leave-to {
-    opacity: 0.5;
-}
-
-.v-enter-from .modal-wrapper-inner,
-.v-leave-to .modal-wrapper-inner {
-    transform: translateY(-500px);
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
 }
 </style>
