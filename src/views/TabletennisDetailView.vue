@@ -42,11 +42,14 @@ function navigatePlaceForward() {
     <TabletennisHeader :is-filter-active="false"></TabletennisHeader>
     <hr class="mx-6">
     <div class="m-6" v-if="place">
-        <div class="flex justify-between">
-            <button @click="navigatePlaceBack">ZURÜCK</button>
-            <button @click="navigatePlaceForward">VOR</button>
-        </div>
-        <div class="flex">
+
+        <div class="flex relative">
+            <button @click="navigatePlaceBack" style="position: absolute; left: 0px; top: 30%"><span
+                    class="icon-[typcn--arrow-left-outline] text-gray-500"
+                    style="width: 64px; height: 64px;"></span></button>
+            <button @click="navigatePlaceForward" style="position: absolute; right: 0px; top: 30%"><span
+                    class="icon-[typcn--arrow-right-outline] text-gray-500"
+                    style="width: 64px; height: 64px;"></span></button>
             <Transition name="fade" mode="out-in">
                 <TabletennisCard :key="place.id" :place="place" class="mx-auto">
                 </TabletennisCard>
@@ -55,17 +58,18 @@ function navigatePlaceForward() {
         </div>
         <!--Location-->
         <div class="flex my-3">
-            <span class="mr-1 w-3/12">Icon</span>
+            <div class="mr-1 w-3/12"><span class="icon-[logos--google-maps]" style="width: 32px; height: 32px;"></span>
+            </div>
             <div class="w-9/12">
-
                 <a :href="place.details?.locationHref" class="mr-1 hover:underline text-blue-600" target="_blank">{{
         place.details?.locationText }}</a>
-                <span>Icon new tab</span>
+                <span class="icon-[fluent-mdl2--open-in-new-tab]" style="width: 16px; height: 16px;"></span>
             </div>
         </div>
         <!--Time-->
         <div class="flex my-3">
-            <span class=" mr-1 w-3/12">Icon</span>
+            <div class=" mr-1 w-3/12"><span class="icon-[ri--calendar-schedule-line]"
+                    style="width: 32px; height: 32px;"></span></div>
             <div class="w-9/12">
                 <p>{{ place.details?.time }}</p>
                 <p>{{ place.details?.timeHint }}</p>
@@ -73,21 +77,24 @@ function navigatePlaceForward() {
         </div>
         <!--Coach-->
         <div class="flex my-3">
-            <span class=" mr-1 w-3/12">Icon</span>
+            <div class=" mr-1 w-3/12"><span class="icon-[mdi--teacher]" style="width: 32px; height: 32px;"></span></div>
             <div class="w-9/12">
-                <p>isCoachPossible: {{ place.details?.isCoachPossible }}</p>
+                <p>{{ place.details?.isCoachPossible ? `Yes - its possible to take a session with the coach` : `No -
+                    there is no coach.But you can enjoy playin with other people` }}</p>
             </div>
         </div>
         <!--Level-->
         <div class="flex my-3">
-            <span class=" mr-1 w-3/12">Icon</span>
+            <div class=" mr-1 w-3/12"><span class="icon-[twemoji--level-slider]"
+                    style="width: 32px; height: 32px;"></span></div>
             <div class="w-9/12">
-                <p>Level: {{ place.details?.level }}</p>
+                <p>This place is recommended for {{ place.details?.level }}</p>
             </div>
         </div>
         <!--text-->
         <div class="flex my-3">
-            <span class=" mr-1 w-3/12">Icon</span>
+            <div class=" mr-1 w-3/12"><span class="icon-[majesticons--text]" style="width: 32px; height: 32px;"></span>
+            </div>
             <div class="w-9/12">
                 <p>{{ place.details?.text }}</p>
             </div>
