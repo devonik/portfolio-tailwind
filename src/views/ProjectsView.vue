@@ -72,8 +72,10 @@ function onYogagraphySubmit() {
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl text-center my-6">Playground</h3>
         <div class="max-w-md mx-auto bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/yogagraphy-logo.png"
-            alt="Yogagraphy">
+          <div class="my-3">
+            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/yogagraphy-logo.png"
+              alt="Yogagraphy">
+          </div>
           <div class="p-8">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Yogagraphy</div>
             <p class="block mt-1 text-lg font-medium text-black dark:text-white">
@@ -126,8 +128,10 @@ function onYogagraphySubmit() {
         <div class="mb-6">
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/pongmaster-logo.png"
-              alt="Pongmaster">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/pongmaster-logo.png"
+                alt="Pongmaster">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">React native developer
                 @Pongmaster</div>
@@ -148,8 +152,10 @@ function onYogagraphySubmit() {
           </div>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/heiland-logo.png"
-              alt="Heiland">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/heiland-logo.png"
+                alt="Heiland">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Full stack developer @Heiland
                 GmbH</div>
@@ -171,8 +177,10 @@ function onYogagraphySubmit() {
           </div>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/upljft-logo.png"
-              alt="Upljft">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/upljft-logo.png"
+                alt="Upljft">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Full stack developer @upljft
                 GmbH
@@ -196,7 +204,9 @@ function onYogagraphySubmit() {
           </div>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/osp-logo.png" alt="OSP">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/osp-logo.png" alt="OSP">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Otto group solution provider
                 GmbH
@@ -218,8 +228,10 @@ function onYogagraphySubmit() {
           </div>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/berenberg-logo.jpeg"
-              alt="Berenberg">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/berenberg-logo.jpeg"
+                alt="Berenberg">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Education @Berenberg
               </div>
@@ -232,8 +244,10 @@ function onYogagraphySubmit() {
           <p class="text-pink-500 text-center text-xl mb-3">Open source projects</p>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-3-intercom.gif"
-              alt="Nuxt 3 intercom">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-3-intercom.gif"
+                alt="Nuxt 3 intercom">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nuxt3 module: nuxt-3-intercom
               </div>
@@ -268,8 +282,10 @@ function onYogagraphySubmit() {
           </div>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-18n-data.gif"
-              alt="Nuxt i18n data">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-18n-data.gif"
+                alt="Nuxt i18n data">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nuxt3 module: nuxt-i18n-data
               </div>
@@ -306,8 +322,10 @@ function onYogagraphySubmit() {
           </div>
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-            <img class="mx-auto object-cover md:rounded-xl md:w-48"
-              src="@/assets/projects/nuxt-vuetify-nested-containment.gif" alt="Nuxt vuetify nested containment">
+            <div class="my-3">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48"
+                src="@/assets/projects/nuxt-vuetify-nested-containment.gif" alt="Nuxt vuetify nested containment">
+            </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nuxt3 module:
                 nuxt-vuetify-nested-containment</div>
