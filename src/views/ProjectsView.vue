@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useHead } from '@unhead/vue'
 import PopupModal from '@/components/PopupModal.vue'
+import ProjectReferenceItem from '@/components/project/ProjectReferenceItem.vue'
 
 useHead({
   title: 'Project history',
@@ -71,51 +72,61 @@ function onYogagraphySubmit() {
     <div class="flex md:flex-row flex-col">
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl text-center my-6">Project references</h3>
-        <div
-          class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="my-3">
+        <ProjectReferenceItem>
+          <template #header>
+            <img class="mx-auto object-cover md:rounded-xl max-h-80"
+              src="@/assets/projects/project-pongmaster-sign-up.gif" alt="Pongmaster refactor sign up flow">
+          </template>
+          <template #title>
+            Pongmaster App sign up flow
+          </template>
+          <template #text>
+            In this project I redesigned the sign up flow in a React Native App. The biggest feature was a background
+            video at the start screen
+          </template>
+          <template #tech>
+            <span class="icon-[tabler--brand-react-native] mr-3" title="VueJs"
+              style="width: 32px; height: 32px;"></span>
+          </template>
+        </ProjectReferenceItem>
+        <ProjectReferenceItem>
+          <template #header>
             <img class="mx-auto object-cover md:rounded-xl px-6" src="@/assets/projects/project-heiland-termine.gif"
-              alt="Yogagraphy">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Online appointment tool for vets
-              and pet owners</div>
-            <p class="block mt-1 text-lg font-medium text-black dark:text-white">
-              With this project a customer (vet) can have his individual appointment booking tool for their customers
-              (pet owners). </p>
-            <p class="mt-3 text-gray-500 dark:text-gray-300">
-              The vet get a individual link he can publish on his website, google maps etc. so the pet
-              owner can book a appointment online. The pet owner can cancel the appointment, gets an appoval email and a
-              reminder email one day before the appointment. The vet gets an email and the appointment is added to his
-              calendar (another project). <br> This project is written in VueJs, Nuxt, NodeJs and hosted in AWS. For the
-              email reminder I use AWS step functions as a queue
-            </p>
-            <div class="mb-3">
-              <p class="block mb-3 text-lg font-medium text-black dark:text-white">
-                Used technologies</p>
-              <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
-              <span class="icon-[logos--nuxt-icon] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
-              <span class="icon-[logos--nodejs] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
-              <span class="icon-[logos--aws] mr-3" title="AWS" style="width: 32px; height: 32px;"></span>
-
-            </div>
-          </div>
-        </div>
-        <div
-          class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="my-3">
+              alt="Vet appointment booking tool">
+          </template>
+          <template #title>
+            Online appointment tool for vets
+            and pet owners
+          </template>
+          <template #subtitle>
+            With this project a customer (vet) can have his individual appointment booking tool for their customers
+            (pet owners).
+          </template>
+          <template #text>
+            The vet get a individual link he can publish on his website, google maps etc. so the pet
+            owner can book a appointment online. The pet owner can cancel the appointment, gets an appoval email and a
+            reminder email one day before the appointment. The vet gets an email and the appointment is added to his
+            calendar (another project). <br> This project is written in VueJs, Nuxt, NodeJs and hosted in AWS. For the
+            email reminder I use AWS step functions as a queue
+          </template>
+          <template #tech>
+            <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--nuxt-icon] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--nodejs] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--aws] mr-3" title="AWS" style="width: 32px; height: 32px;"></span>
+          </template>
+        </ProjectReferenceItem>
+        <ProjectReferenceItem github-link="https://github.com/devonik/laravel-api">
+          <template #header>
             <img class="mx-auto object-cover md:rounded-xl px-6" src="@/assets/projects/yogagraphy-logo.png"
               alt="Yogagraphy">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Yogagraphy</div>
-            <p class="block mt-1 text-lg font-medium text-black dark:text-white">
-              A christmas project to generate christmas cards with a individual yogagraphy and send them as bulk
-              emails via mailchimp.</p>
-            <p class="mt-3 text-gray-500 dark:text-gray-300">
-              The API that response the generated Image is written in Laravel and the PHP Server
-              is running in a Docker Container
-            </p>
+          </template>
+          <template #title>
+            Yogagraphy
+          </template>
+          <template #subtitle>
+            A christmas project to generate christmas cards with a individual yogagraphy and send them as bulk
+            emails via mailchimp.
             <div class="my-3 text-gray-500 dark:text-gray-300">
               <form @submit.prevent="onYogagraphySubmit">
                 <div class="mb-3">
@@ -142,58 +153,44 @@ function onYogagraphySubmit() {
                 </button>
               </form>
             </div>
-            <div class="mb-3">
-              <p class="block mb-3 text-lg font-medium text-black dark:text-white">
-                Used technologies</p>
-              <span class="icon-[logos--laravel] mr-3" title="Laravel" style="width: 32px; height: 32px;"></span>
-              <span class="icon-[logos--react] mr-3" title="React" style="width: 32px; height: 32px;"></span>
-              <span class="icon-[logos--docker-icon] mr-3" title="Docker" style="width: 32px; height: 32px;"></span>
+          </template>
+          <template #text>
+            The API that response the generated Image is written in Laravel and the PHP Server
+            is running in a Docker Container
+          </template>
+          <template #tech>
+            <span class="icon-[logos--laravel] mr-3" title="Laravel" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--react] mr-3" title="React" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--docker-icon] mr-3" title="Docker" style="width: 32px; height: 32px;"></span>
+          </template>
 
-            </div>
-            <div class="mb-3">
-              <a target="_blank" href="https://github.com/devonik/laravel-api"
-                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
-                  class="icon-[ri--github-fill] mr-1" style="width: 16px; height: 16px;"></span>
-                GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-          <div class="my-3">
+          <PopupModal :is-modal-visible="yogagraphyResultModalVisible" @close="yogagraphyResultModalVisible = false">
+            <img class="mx-auto" max-height="200" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
+          </PopupModal>
+        </ProjectReferenceItem>
+        <ProjectReferenceItem github-link="https://github.com/devonik/landingpage-dinnebier">
+          <template #header>
             <img class="mx-auto object-cover md:rounded-xl px-6"
               src="@/assets/projects/project-landingpage-dinnebier.gif" alt="Jaguar E-Pace Landingpage Screenshot">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Auto Landingpage</div>
-            <p class="block mt-1 text-lg font-medium text-black dark:text-white">
-              This landingpage was made for specific car - The Jaguar E-Pace.</p>
-            <p class="mt-3 text-gray-500 dark:text-gray-300">
-              This project is written in native
-              Javascript, Scss and nunjucks as a template engine and is hosted on netlify
-            </p>
-            <div class="mb-3">
-              <p class="block mb-3 text-lg font-medium text-black dark:text-white">
-                Used technologies</p>
-              <span class="icon-[simple-icons--nunjucks] mr-3" title="Nunjucks"
-                style="width: 32px; height: 32px;"></span>
-              <span class="icon-[vscode-icons--file-type-scss] mr-3" title="Scss"
-                style="width: 32px; height: 32px;"></span>
-              <span class="icon-[skill-icons--javascript] mr-3" title="Javascript"
-                style="width: 32px; height: 32px;"></span>
-
-            </div>
-            <div class="mb-3">
-              <a target="_blank" href="https://github.com/devonik/landingpage-dinnebier"
-                class="text-indigo-500 border border-indigo-500 hover:bg-indigo-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"><span
-                  class="icon-[ri--github-fill] mr-1" style="width: 16px; height: 16px;"></span>
-                GitHub</a>
-            </div>
-          </div>
-        </div>
-        <PopupModal :is-modal-visible="yogagraphyResultModalVisible" @close="yogagraphyResultModalVisible = false">
-          <img class="mx-auto" max-height="200" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
-        </PopupModal>
+          </template>
+          <template #title>
+            Car Landingpage
+          </template>
+          <template #subtitle>
+            This landingpage was made for specific car - The Jaguar E-Pace.
+          </template>
+          <template #text>
+            This project is written in native
+            Javascript, Scss and nunjucks as a template engine and is hosted on netlify
+          </template>
+          <template #tech>
+            <span class="icon-[simple-icons--nunjucks] mr-3" title="Nunjucks" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[vscode-icons--file-type-scss] mr-3" title="Scss"
+              style="width: 32px; height: 32px;"></span>
+            <span class="icon-[skill-icons--javascript] mr-3" title="Javascript"
+              style="width: 32px; height: 32px;"></span>
+          </template>
+        </ProjectReferenceItem>
       </div>
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl text-center my-6">Project history</h3>
