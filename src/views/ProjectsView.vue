@@ -51,7 +51,7 @@ function onYogagraphySubmit() {
     fetch(`https://laravel-api.devnik.dev/api/yogagraphy/getImageByForm/`, { method: 'post', headers: { "Content-Type": "application/json" }, body: JSON.stringify(yogagraphyModel.value) })
       .then(async response => {
         yogagraphyApiResponse.value = await response.json()
-        console.log("response", yogagraphyApiResponse.value)
+
         yogagraphyResultModalVisible.value = true
       })
       .catch(function (error) {
@@ -163,11 +163,11 @@ function onYogagraphySubmit() {
             <span class="icon-[logos--react] mr-3" title="React" style="width: 32px; height: 32px;"></span>
             <span class="icon-[logos--docker-icon] mr-3" title="Docker" style="width: 32px; height: 32px;"></span>
           </template>
-
-          <PopupModal :is-modal-visible="yogagraphyResultModalVisible" @close="yogagraphyResultModalVisible = false">
-            <img class="mx-auto" max-height="200" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
-          </PopupModal>
         </ProjectReferenceItem>
+
+        <PopupModal :is-modal-visible="yogagraphyResultModalVisible" @close="yogagraphyResultModalVisible = false">
+          <img class="mx-auto" max-height="200" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
+        </PopupModal>
         <ProjectReferenceItem github-link="https://github.com/devonik/landingpage-dinnebier">
           <template #header>
             <img class="mx-auto object-cover md:rounded-xl px-6"
