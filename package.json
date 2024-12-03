@@ -27,12 +27,14 @@
     "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.11.30",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/tsconfig": "^0.5.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
+    "leaflet": "^1.9.4",
     "npm-run-all2": "^6.1.2",
     "postcss": "^8.4.38",
     "prettier": "^3.0.3",
@@ -43,6 +45,7 @@
     "unplugin-icons": "^0.18.5",
     "vite": "^5.1.6",
     "vite-plugin-vue-devtools": "^7.0.18",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.0.6",
+    "vue3-select-component": "^0.7.0"
   }
 }

@@ -1,0 +1,1 @@
+export const mapCenterKey = Symbol()
