@@ -44,16 +44,17 @@ const vueSelectRegionOptions: Array<Option<string> & { coords: number[] }> = reg
 </script>
 
 <template>
-  <div class="m-6 justify-items-center text-center">
+  <div class="m-6 flex flex-col gap-3 text-center">
     <h1 class="text-4xl">
       <span class="text-red-600">Tabletennis</span> <span class="text-black">Worldwide</span>
     </h1>
-    <p class="mb-6 mt-1 text-gray-500">Find places to play tabletennis around the world</p>
-    <div class="flex" v-if="isFilterActive">
-      <div class="mr-3 flex flex-col">
+    <p class="mb-6 text-gray-500">Find places to play tabletennis around the world</p>
+    <div class="flex flex-col gap-3" v-if="isFilterActive">
+      <div class="mr-3 flex flex-col gap-2">
         <label for="filter-continent">Filter by region</label>
         <VueSelect
           v-model="filter.region"
+          class="m-auto"
           :options="vueSelectRegionOptions"
           placeholder="Select an region"
           @option-selected="
@@ -64,10 +65,11 @@ const vueSelectRegionOptions: Array<Option<string> & { coords: number[] }> = reg
           "
         />
       </div>
-      <div class="mr-3 flex flex-col" v-if="filter.region">
+      <div class="mr-3 flex flex-col gap-2" v-if="filter.region">
         <label for="filter-country">Filter by country</label>
         <VueSelect
           v-model="filter.country"
+          class="m-auto"
           :options="
             places
               .filter((place) => place.region === filter.region)
@@ -86,14 +88,12 @@ const vueSelectRegionOptions: Array<Option<string> & { coords: number[] }> = reg
           "
         />
       </div>
-      <div>
-        <button
-          class="rounded-lg border bg-red-300 px-3 font-medium text-black"
-          @click="resetFilter"
-        >
-          Reset filter
-        </button>
-      </div>
+    </div>
+
+    <div>
+      <button class="rounded-lg border bg-red-300 px-3 font-medium text-black" @click="resetFilter">
+        Reset filter
+      </button>
     </div>
 
     <TabletennisMap :places="filteredPlaces" />
@@ -101,7 +101,7 @@ const vueSelectRegionOptions: Array<Option<string> & { coords: number[] }> = reg
 </template>
 <style scoped>
 :deep(.vue-select) {
-  width: 320px;
+  max-width: 320px;
   z-index: 500;
 }
 

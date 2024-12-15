@@ -4,7 +4,7 @@ import { RouterLink, useRouter } from 'vue-router'
 const router = useRouter()
 </script>
 <template>
-  <div class="h-56">
+  <div>
     <div class="app-bar__image h-4/5"></div>
     <!-- Our link container -->
     <div class="mt-2 flex h-1/5 items-center justify-center space-x-2 text-2xl">
@@ -23,14 +23,6 @@ const router = useRouter()
         as="a"
       >
         <div>Projects</div>
-      </RouterLink>
-      <RouterLink
-        to="/tabletennis"
-        class="inline-flex items-center rounded-lg border border-indigo-500 p-2.5 text-center text-sm font-medium text-indigo-500 hover:bg-indigo-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-blue-500 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
-        :class="{ 'bg-indigo-500 text-white': router.currentRoute.value.path === '/projects' }"
-        as="a"
-      >
-        <div>For fun: tabletennis worldwide</div>
       </RouterLink>
     </div>
   </div>

@@ -72,6 +72,34 @@ function onYogagraphySubmit() {
     <div class="flex md:flex-row flex-col">
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl text-center my-6">Project references</h3>
+
+        <ProjectReferenceItem>
+        
+      >
+      <template #header>
+            
+      <RouterLink
+        to="/tabletennis"
+        class="mx-auto object-cover md:rounded-xl max-h-80"
+        as="a"
+      >
+      <div class="rounded-sm hover:opacity-30">
+    <img class="m-auto rounded-sm max-h-72 max-w-72" src="/tabletennis/thailand-ko-phangan.jpg" />
+  </div>
+      </RouterLink>
+      
+          </template>
+      <template #title>
+            Tabletennis worldwide
+          </template>
+          <template #text>
+            This is just a fun idea of mine. One of favorite hobby is Tabletennis. I've been traveling 8 Month's through south east asia. Together with my racket I found in the most countries a club to play. In this tool people can find my documented tabletennis locations with some extra information e.g. how to be get there - some times it was a bit tricky ;)
+          </template>
+          <template #tech>
+            <span class="icon-[devicon--vuejs] mr-3" title="VueJs"
+              style="width: 32px; height: 32px;"></span>
+          </template>
+      </ProjectReferenceItem>
         <ProjectReferenceItem>
           <template #header>
             <img class="mx-auto object-cover md:rounded-xl max-h-80"
@@ -85,7 +113,7 @@ function onYogagraphySubmit() {
             video at the start screen
           </template>
           <template #tech>
-            <span class="icon-[tabler--brand-react-native] mr-3" title="VueJs"
+            <span class="icon-[tabler--brand-react-native] mr-3" title="ReactNative"
               style="width: 32px; height: 32px;"></span>
           </template>
         </ProjectReferenceItem>

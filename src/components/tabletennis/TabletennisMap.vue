@@ -14,7 +14,7 @@ const zoom = ref(4)
 const mapCenter = inject(mapCenterKey)
 </script>
 <template>
-  <div style="height: 300px; width: 100vh">
+  <div style="height: 300px">
     <l-map
       ref="map"
       :use-global-leaflet="false"
