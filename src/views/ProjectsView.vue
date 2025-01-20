@@ -72,16 +72,35 @@ function onYogagraphySubmit() {
     <div class="flex md:flex-row flex-col">
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl text-center my-6">Project references</h3>
-
-        <ProjectReferenceItem>
+        <ProjectReferenceItem 
+        full-screen-image-file-name="smart-agency.gif"
+        full-screen-image-alt="Smart agency">
+          <template #header>
+            <img class="rounded-sm max-h-72 max-w-72"
+              src="/projects/smart-agency.gif" alt="Smart agency" />
+                
+          </template>
+          <template #title>
+            Smart agency
+          </template>
+          <template #text>
+            In this project I build the landingpage with VueJs and NuxtJs
+          </template>
+          <template #tech>
+            <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--nuxt-icon] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--aws] mr-3" title="AWS" style="width: 32px; height: 32px;"></span>
+          </template>
+        </ProjectReferenceItem>
+        <ProjectReferenceItem> 
         
-      >
+      
       <template #header>
             
       <RouterLink
         to="/tabletennis"
         class="mx-auto object-cover md:rounded-xl max-h-80"
-        as="a"
+        as="a" 
       >
       <div class="rounded-sm hover:opacity-30">
     <img class="m-auto rounded-sm max-h-72 max-w-72" src="/tabletennis/thailand-ko-phangan.jpg" />
@@ -100,10 +119,13 @@ function onYogagraphySubmit() {
               style="width: 32px; height: 32px;"></span>
           </template>
       </ProjectReferenceItem>
-        <ProjectReferenceItem>
+        <ProjectReferenceItem 
+        full-screen-image-file-name="project-pongmaster-sign-up.gif"
+        full-screen-image-alt="Pongmaster refactor sign up flow">
           <template #header>
-            <img class="mx-auto object-cover md:rounded-xl max-h-80"
-              src="@/assets/projects/project-pongmaster-sign-up.gif" alt="Pongmaster refactor sign up flow">
+            <img class="rounded-sm max-h-72 max-w-72"
+              src="/projects/project-pongmaster-sign-up.gif" alt="Pongmaster refactor sign up flow" />
+                
           </template>
           <template #title>
             Pongmaster App sign up flow
@@ -117,9 +139,10 @@ function onYogagraphySubmit() {
               style="width: 32px; height: 32px;"></span>
           </template>
         </ProjectReferenceItem>
-        <ProjectReferenceItem>
+        <ProjectReferenceItem full-screen-image-file-name="project-heiland-termine.gif"
+        full-screen-image-alt="Vet appointment booking tool">
           <template #header>
-            <img class="mx-auto object-cover md:rounded-xl px-6" src="@/assets/projects/project-heiland-termine.gif"
+            <img class="mx-auto object-cover md:rounded-xl px-6" src="/projects/project-heiland-termine.gif"
               alt="Vet appointment booking tool">
           </template>
           <template #title>
@@ -140,13 +163,13 @@ function onYogagraphySubmit() {
           <template #tech>
             <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
             <span class="icon-[logos--nuxt-icon] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
-            <span class="icon-[logos--nodejs] mr-3" title="NuxtJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--nodejs] mr-3" title="NodeJs" style="width: 32px; height: 32px;"></span>
             <span class="icon-[logos--aws] mr-3" title="AWS" style="width: 32px; height: 32px;"></span>
           </template>
         </ProjectReferenceItem>
         <ProjectReferenceItem github-link="https://github.com/devonik/laravel-api">
           <template #header>
-            <img class="mx-auto object-cover md:rounded-xl px-6" src="@/assets/projects/yogagraphy-logo.png"
+            <img class="mx-auto object-cover md:rounded-xl px-6" src="/projects/yogagraphy-logo.png"
               alt="Yogagraphy">
           </template>
           <template #title>
@@ -194,12 +217,13 @@ function onYogagraphySubmit() {
         </ProjectReferenceItem>
 
         <PopupModal :is-modal-visible="yogagraphyResultModalVisible" @close="yogagraphyResultModalVisible = false">
-          <img class="mx-auto" max-height="200" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
+          <img class="mx-auto" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
         </PopupModal>
-        <ProjectReferenceItem github-link="https://github.com/devonik/landingpage-dinnebier">
+        <ProjectReferenceItem github-link="https://github.com/devonik/landingpage-dinnebier" full-screen-image-file-name="project-landingpage-dinnebier.gif" 
+        full-screen-image-alt="Jaguar E-Pace Landingpage Screenshot">
           <template #header>
             <img class="mx-auto object-cover md:rounded-xl px-6"
-              src="@/assets/projects/project-landingpage-dinnebier.gif" alt="Jaguar E-Pace Landingpage Screenshot">
+              src="/projects/project-landingpage-dinnebier.gif" alt="Jaguar E-Pace Landingpage Screenshot">
           </template>
           <template #title>
             Car Landingpage
@@ -227,7 +251,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/pongmaster-logo.png"
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/pongmaster-logo.png"
                 alt="Pongmaster">
             </div>
             <div class="p-8">
@@ -251,7 +275,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/heiland-logo.png"
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/heiland-logo.png"
                 alt="Heiland">
             </div>
             <div class="p-8">
@@ -276,7 +300,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/upljft-logo.png"
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/upljft-logo.png"
                 alt="Upljft">
             </div>
             <div class="p-8">
@@ -303,7 +327,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/osp-logo.png" alt="OSP">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/osp-logo.png" alt="OSP">
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Otto group solution provider
@@ -327,7 +351,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/berenberg-logo.jpeg"
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/berenberg-logo.jpeg"
                 alt="Berenberg">
             </div>
             <div class="p-8">
@@ -343,7 +367,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-3-intercom.gif"
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/nuxt-3-intercom.gif"
                 alt="Nuxt 3 intercom">
             </div>
             <div class="p-8">
@@ -381,7 +405,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="@/assets/projects/nuxt-18n-data.gif"
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/nuxt-18n-data.gif"
                 alt="Nuxt i18n data">
             </div>
             <div class="p-8">
@@ -422,7 +446,7 @@ function onYogagraphySubmit() {
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
               <img class="mx-auto object-cover md:rounded-xl md:w-48"
-                src="@/assets/projects/nuxt-vuetify-nested-containment.gif" alt="Nuxt vuetify nested containment">
+                src="/projects/nuxt-vuetify-nested-containment.gif" alt="Nuxt vuetify nested containment">
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Nuxt3 module:

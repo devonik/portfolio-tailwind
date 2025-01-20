@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { onMounted, provide, ref } from 'vue'
-import type { Ref } from 'vue'
+import { provide, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import TabletennisHeader from '@/components/tabletennis/TabletennisHeader.vue'
 import TabletennisCard from '@/components/tabletennis/TabletennisCard.vue'
