@@ -5,7 +5,7 @@ const router = useRouter()
 </script>
 <template>
   <div>
-    <div class="app-bar__image h-4/5"></div>
+    <div class="app-bar__image h-40"></div>
     <!-- Our link container -->
     <div class="mt-2 flex h-1/5 items-center justify-center space-x-2 text-2xl">
       <RouterLink
