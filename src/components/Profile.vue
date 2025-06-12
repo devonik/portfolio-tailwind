@@ -50,26 +50,25 @@ fetchStackoverflowUserData()
                             Something
                             about me</p>
                         <p class="mt-2 text-gray-500 dark:text-gray-300">
-                            Hello, I am Niklas from Germany and I'm a passionate full stack software engineer.
+                            Hello, I am Niklas from Germany, and I'm a passionate full-stack software engineer.
                             <br><br>
-                            I finished my education in the start of 2018 and I am always highly interested in new
-                            technologies.<br>
-                            My favorite technologies are VueJs, Nuxt, Vuetify for the Frontend, NodeJs or Java Spring
-                            Boot in the Backend, PostgreSQL or NoSQL as database and AWS as a Cloud provider. For App
-                            development I am interested in React Native and Flutter projects.<br>
+I finished my education at the start of 2018, and I am always highly interested in new
+ Technologies.<br>
+My favorite technologies are VueJs, Nuxt, and Vuetify for the frontend NodeJs or Java Spring
+                            Boot in the backend, PostgreSQL or NoSQL as a database, and AWS as a cloud provider. For app development, I am interested in React Native and Flutter projects.<br>
                             <br>
                             In every project I've been in, I worked as a full-stack developer, and I love being able to
-                            do everything myself in a project. However, my favorite area to specialize in is
-                            frontend.
+                            Do everything myself in a project. However, my favorite area to specialize in is
+                            Frontend.
                         </p>
                         <p class="block mt-2 text-lg font-medium text-black dark:text-white">I can help you:</p>
                         <ul class="mt-2 text-gray-500 dark:text-gray-300 list-disc">
                             <li>Evaluate what technology fits the best for your Project</li>
-                            <li>Maintain or create your next VueJs Project (5 years+ experience)</li>
-                            <li>Migrate your Version 2 VueJs (also Vuex, Nuxt, Vuetify if used) to the latest Version 3
+                            <li>Maintain or create your next VueJs project (7+ years experience)</li>
+                            <li>Migrate your Version 2 VueJs (also Vuex, Nuxt, and Vuetify if used) to the latest Version 3.
                             </li>
                             <li>Work with NodeJs or Java Spring Boot as a REST API</li>
-                            <li>Work with AWS Services like AWS Lambda, AWS API Gateway, AWS Beanstalk and more</li>
+                            <li>Work with AWS services like AWS Lambda, AWS API Gateway, AWS Beanstalk, and more</li>
                             <li>Helping you with your CI/CD workflow</li>
                             <li>Detecting actual problems and finding efficient solutions in your workflow or code</li>
                             problems

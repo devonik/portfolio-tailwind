@@ -72,19 +72,16 @@ function onYogagraphySubmit() {
     <div class="flex md:flex-row flex-col">
       <div class="max-w-md mx-auto">
         <h3 class="text-2xl text-center my-6">Project references</h3>
-        <ProjectReferenceItem 
-        full-screen-image-file-name="smart-agency.gif"
-        full-screen-image-alt="Smart agency">
+        <ProjectReferenceItem full-screen-image-file-name="smart-agency.gif" full-screen-image-alt="Smart agency">
           <template #header>
-            <img class="rounded-sm max-h-72 max-w-72"
-              src="/projects/smart-agency.gif" alt="Smart agency" />
-                
+            <img class="rounded-sm max-h-72 max-w-72" src="/projects/smart-agency.gif" alt="Smart agency" />
+
           </template>
           <template #title>
             Smart agency
           </template>
           <template #text>
-            In this project I build the landingpage with VueJs and NuxtJs
+            In this project, I build the landing page with VueJs and NuxtJs
           </template>
           <template #tech>
             <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
@@ -92,47 +89,63 @@ function onYogagraphySubmit() {
             <span class="icon-[logos--aws] mr-3" title="AWS" style="width: 32px; height: 32px;"></span>
           </template>
         </ProjectReferenceItem>
-        <ProjectReferenceItem> 
-        
-      
-      <template #header>
-            
-      <RouterLink
-        to="/tabletennis"
-        class="mx-auto object-cover md:rounded-xl max-h-80"
-        as="a" 
-      >
-      <div class="rounded-sm hover:opacity-30">
-    <img class="m-auto rounded-sm max-h-72 max-w-72" src="/tabletennis/thailand-ko-phangan.jpg" />
-  </div>
-      </RouterLink>
-      
+
+        <ProjectReferenceItem>
+          <template #header>
+            <a target="_blank" href="https://blog.devnik.dev" class="mx-auto object-cover md:rounded-xl max-h-80">
+              <div class="rounded-sm hover:opacity-30">
+                <img class="m-auto rounded-sm max-h-72 max-w-72" src="/projects/project-blog.png" />
+              </div>
+            </a>
+
           </template>
-      <template #title>
+          <template #title>
+            Travel blog
+          </template>
+          <template #text>
+            I started building this blog while traveling. The idea is to write about my travel experience and offer tips and tricks for other travelers. I built this blog from scratch. <br> I didn't
+wanted to use any CMS system like WordPress, Wix, etc. I don't like CMS because they're forcing me to use tons of plugins and being stuck in their ecosystem. Now I am flexible to develop custom features. <br> I am using
+Vue, Nuxt and Nuxt-content. I implement the Stripe API to offer some custom products, including a webhook to send a custom email to the purchaser.
+          </template>
+          <template #tech>
+            <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--nuxt-icon] mr-3" title="Nuxt" style="width: 32px; height: 32px;"></span>
+            <span class="icon-[logos--stripe] mr-3" title="Stripe" style="width: 32px; height: 32px;"></span>
+          </template>
+        </ProjectReferenceItem>
+
+        <ProjectReferenceItem>
+          <template #header>
+            <RouterLink to="/tabletennis" class="mx-auto object-cover md:rounded-xl max-h-80" as="a">
+              <div class="rounded-sm hover:opacity-30">
+                <img class="m-auto rounded-sm max-h-72 max-w-72" src="/tabletennis/thailand-ko-phangan.jpg" />
+              </div>
+            </RouterLink>
+
+          </template>
+          <template #title>
             Tabletennis worldwide
           </template>
           <template #text>
-            This is just a fun idea of mine. One of favorite hobby is Tabletennis. I've been traveling 8 Month's through south east asia. Together with my racket I found in the most countries a club to play. In this tool people can find my documented tabletennis locations with some extra information e.g. how to be get there - some times it was a bit tricky ;)
+            This is just a fun idea of mine. One of my favorite hobbies is table tennis. I've been traveling for 8 months through Southeast Asia. Together with my racket I found in the most countries a club to play. In this tool people can find my documented table tennis locations with some extra information, e.g., how to get there - sometimes it was a bit tricky. ;)
           </template>
           <template #tech>
-            <span class="icon-[devicon--vuejs] mr-3" title="VueJs"
-              style="width: 32px; height: 32px;"></span>
+            <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
           </template>
-      </ProjectReferenceItem>
-        <ProjectReferenceItem 
-        full-screen-image-file-name="project-pongmaster-sign-up.gif"
-        full-screen-image-alt="Pongmaster refactor sign up flow">
+        </ProjectReferenceItem>
+
+        <ProjectReferenceItem full-screen-image-file-name="project-pongmaster-sign-up.gif"
+          full-screen-image-alt="Pongmaster refactor sign up flow">
           <template #header>
-            <img class="rounded-sm max-h-72 max-w-72"
-              src="/projects/project-pongmaster-sign-up.gif" alt="Pongmaster refactor sign up flow" />
-                
+            <img class="rounded-sm max-h-72 max-w-72" src="/projects/project-pongmaster-sign-up.gif"
+              alt="Pongmaster refactor sign up flow" />
+
           </template>
           <template #title>
             Pongmaster App sign up flow
           </template>
           <template #text>
-            In this project I redesigned the sign up flow in a React Native App. The biggest feature was a background
-            video at the start screen
+            In this project I redesigned the sign-up flow in a React Native app. The biggest feature was a background video at the start screen.
           </template>
           <template #tech>
             <span class="icon-[tabler--brand-react-native] mr-3" title="ReactNative"
@@ -140,7 +153,7 @@ function onYogagraphySubmit() {
           </template>
         </ProjectReferenceItem>
         <ProjectReferenceItem full-screen-image-file-name="project-heiland-termine.gif"
-        full-screen-image-alt="Vet appointment booking tool">
+          full-screen-image-alt="Vet appointment booking tool">
           <template #header>
             <img class="mx-auto object-cover md:rounded-xl px-6" src="/projects/project-heiland-termine.gif"
               alt="Vet appointment booking tool">
@@ -154,11 +167,11 @@ function onYogagraphySubmit() {
             (pet owners).
           </template>
           <template #text>
-            The vet get a individual link he can publish on his website, google maps etc. so the pet
-            owner can book a appointment online. The pet owner can cancel the appointment, gets an appoval email and a
-            reminder email one day before the appointment. The vet gets an email and the appointment is added to his
+            The vet gets an individual link he can publish on his website, Google Maps, etc., so the pet
+The owner can book an appointment online. The pet owner can cancel the appointment, get an approval email, and a
+reminder email one day before the appointment. The vet gets an email, and the appointment is added to his
             calendar (another project). <br> This project is written in VueJs, Nuxt, NodeJs and hosted in AWS. For the
-            email reminder I use AWS step functions as a queue
+email reminders, I use AWS Step Functions as a queue
           </template>
           <template #tech>
             <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
@@ -169,15 +182,14 @@ function onYogagraphySubmit() {
         </ProjectReferenceItem>
         <ProjectReferenceItem github-link="https://github.com/devonik/laravel-api">
           <template #header>
-            <img class="mx-auto object-cover md:rounded-xl px-6" src="/projects/yogagraphy-logo.png"
-              alt="Yogagraphy">
+            <img class="mx-auto object-cover md:rounded-xl px-6" src="/projects/yogagraphy-logo.png" alt="Yogagraphy">
           </template>
           <template #title>
             Yogagraphy
           </template>
           <template #subtitle>
-            A christmas project to generate christmas cards with a individual yogagraphy and send them as bulk
-            emails via mailchimp.
+           A Christmas project to generate Christmas cards with an individual yogagraphy and send them in bulk
+            emails via Mailchimp.
             <div class="my-3 text-gray-500 dark:text-gray-300">
               <form @submit.prevent="onYogagraphySubmit">
                 <div class="mb-3">
@@ -206,8 +218,8 @@ function onYogagraphySubmit() {
             </div>
           </template>
           <template #text>
-            The API that response the generated Image is written in Laravel and the PHP Server
-            is running in a Docker Container
+            The API that respond the generated image is written in Laravel and the PHP server.
+            is running in a Docker container
           </template>
           <template #tech>
             <span class="icon-[logos--laravel] mr-3" title="Laravel" style="width: 32px; height: 32px;"></span>
@@ -219,11 +231,12 @@ function onYogagraphySubmit() {
         <PopupModal :is-modal-visible="yogagraphyResultModalVisible" @close="yogagraphyResultModalVisible = false">
           <img class="mx-auto" :src="yogagraphyApiResponse.image.encoded" alt="Yogagrapy image" />
         </PopupModal>
-        <ProjectReferenceItem github-link="https://github.com/devonik/landingpage-dinnebier" full-screen-image-file-name="project-landingpage-dinnebier.gif" 
-        full-screen-image-alt="Jaguar E-Pace Landingpage Screenshot">
+        <ProjectReferenceItem github-link="https://github.com/devonik/landingpage-dinnebier"
+          full-screen-image-file-name="project-landingpage-dinnebier.gif"
+          full-screen-image-alt="Jaguar E-Pace Landingpage Screenshot">
           <template #header>
-            <img class="mx-auto object-cover md:rounded-xl px-6"
-              src="/projects/project-landingpage-dinnebier.gif" alt="Jaguar E-Pace Landingpage Screenshot">
+            <img class="mx-auto object-cover md:rounded-xl px-6" src="/projects/project-landingpage-dinnebier.gif"
+              alt="Jaguar E-Pace Landingpage Screenshot">
           </template>
           <template #title>
             Car Landingpage
@@ -233,7 +246,7 @@ function onYogagraphySubmit() {
           </template>
           <template #text>
             This project is written in native
-            Javascript, Scss and nunjucks as a template engine and is hosted on netlify
+ JavaScript, SCSS, and nunjucks as a template engine and is hosted on Netlify
           </template>
           <template #tech>
             <span class="icon-[simple-icons--nunjucks] mr-3" title="Nunjucks" style="width: 32px; height: 32px;"></span>
@@ -275,8 +288,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/heiland-logo.png"
-                alt="Heiland">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/heiland-logo.png" alt="Heiland">
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Full stack developer @Heiland
@@ -300,8 +312,7 @@ function onYogagraphySubmit() {
           <div
             class="max-w-md mx-auto mb-3 bg-white dark:bg-gray-800 md:rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div class="my-3">
-              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/upljft-logo.png"
-                alt="Upljft">
+              <img class="mx-auto object-cover md:rounded-xl md:w-48" src="/projects/upljft-logo.png" alt="Upljft">
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Full stack developer @upljft
@@ -397,8 +408,8 @@ function onYogagraphySubmit() {
               </p>
               <p>
                 <span class="font-size: small text-gray-500 dark:text-gray-300">Npm downloads per month: <strong>{{
-                nuxt3IntercomTotalDownloads
-              }}</strong></span>
+                  nuxt3IntercomTotalDownloads
+                    }}</strong></span>
               </p>
             </div>
           </div>
@@ -438,7 +449,7 @@ function onYogagraphySubmit() {
               <p>
                 <span class="font-size: small text-gray-500 dark:text-gray-300">Npm downloads per month: <strong>{{
                   nuxtI18nDataTotalDownloads
-                }}</strong></span>
+                    }}</strong></span>
               </p>
             </div>
           </div>
