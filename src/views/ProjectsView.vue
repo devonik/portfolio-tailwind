@@ -114,26 +114,6 @@ Vue, Nuxt and Nuxt-content. I implement the Stripe API to offer some custom prod
           </template>
         </ProjectReferenceItem>
 
-        <ProjectReferenceItem>
-          <template #header>
-            <RouterLink to="/tabletennis" class="mx-auto object-cover md:rounded-xl max-h-80" as="a">
-              <div class="rounded-sm hover:opacity-30">
-                <img class="m-auto rounded-sm max-h-72 max-w-72" src="/tabletennis/thailand-ko-phangan.jpg" />
-              </div>
-            </RouterLink>
-
-          </template>
-          <template #title>
-            Tabletennis worldwide
-          </template>
-          <template #text>
-            This is just a fun idea of mine. One of my favorite hobbies is table tennis. I've been traveling for 8 months through Southeast Asia. Together with my racket I found in the most countries a club to play. In this tool people can find my documented table tennis locations with some extra information, e.g., how to get there - sometimes it was a bit tricky. ;)
-          </template>
-          <template #tech>
-            <span class="icon-[devicon--vuejs] mr-3" title="VueJs" style="width: 32px; height: 32px;"></span>
-          </template>
-        </ProjectReferenceItem>
-
         <ProjectReferenceItem full-screen-image-file-name="project-pongmaster-sign-up.gif"
           full-screen-image-alt="Pongmaster refactor sign up flow">
           <template #header>
